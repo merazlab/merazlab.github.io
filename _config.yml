@@ -3,4 +3,5 @@ theme: jekyll-theme-cayman
 gem "github-pages", group: :jekyll_plugins
 
 title: [Mohammad Meraz]
-description: [A short description of your site's purpose]
+description: [Computer vision and deep learning  in the area of Autonomous Driving Car, especially 3D scene understanding with point cloud dataset to solve perception problems for 3D Shape.
+]
