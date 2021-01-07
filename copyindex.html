@@ -1,0 +1,619 @@
+<h2 id="news">News</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<ul>
+  <li>
+    I am awarded <strong>Google PhD Fellowship 2020</strong>, see the
+    <a href="https://ai.googleblog.com/2020/10/announcing-2020-google-phd-fellows.html">news</a>
+    from Google AI Blog.
+    <!-- * **<span style="color:red;">[NEW]</span>**   -->
+    <!-- * [2020-06] -->
+  </li>
+  <li>
+    Highly optimized PyTorch codebase
+    <a href="https://github.com/open-mmlab/OpenPCDet">OpenPCDet</a> for
+    LiDAR-based 3D scene understanding is released, including the
+    implementation of PV-RCNN, the 1st place method in the KITTI 3D
+    detection leaderboard.
+    <!-- * **<span style="color:red;">[NEW]</span>**  -->
+  </li>
+  <li>
+    We win the
+    <span style="color: black"><strong>1st place among all LiDAR-only methods</strong>
+    </span>
+    on 3D Detection, 3D Tracking, Domain Adaptation three tracks of the
+    <a href="https://waymo.com/open/challenges/">Waymo Open Dataset challenge</a>. See the official
+    <a href="https://blog.waymo.com/2020/07/opendataset-challenge-winners.html">blog post</a>
+    from Waymo.
+  </li>
+  <li>
+    Two papers with <span style="color: red">one oral</span> got accepted
+    by CVPR 2020.
+  </li>
+  <li>
+    Our Part-A^2 net got accepted by T-PAMI 2020, code is available at
+    <a href="https://github.com/sshaoshuai/PartA2-Net">PartA2-Net</a>.
+  </li>
+  <li>One paper got accepted by ICRA 2020.</li>
+  <li>One paper got accepted by CVPR 2019.</li>
+  <li>One paper got accepted by ICLR 2019.</li>
+  <li>One paper got accepted by ECCV 2018.</li>
+</ul>
+
+<script type="text/javascript">
+  function hideshow(which) {
+    if (!document.getElementById) return;
+    if (which.style.display == "block") which.style.display = "none";
+    else which.style.display = "block";
+  }
+</script>
+
+<h2 id="codebase">Codebase</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/pcdet_min.png" width="96%" height="100" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://github.com/open-mmlab/OpenPCDet" style="">
+          OpenPCDet: An Open-source Toolbox for 3D Object Detection from
+          Point Cloud
+        </a>
+        <br />
+        <font color="#000000">OpenPCDet Development Team </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            <!--       arXiv:1912.13192, Technical Report, 2019
+        </em>  -->
+            June 2020
+          </em>
+        </font>
+        <br />
+        <a href="https://github.com/open-mmlab/OpenPCDet" style="">[Code]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('OpenPCDet'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/open-mmlab/OpenPCDet?style=social" />
+        </a>
+        <br />
+      </div>
+    </td>
+  </tr>
+</table>
+<!-- <pre><p id="OpenPCDet" style="font:18px; display:none">
+@inproceedings{shi2020pcdet,
+title={OpenPCDet: An Open-source Toolbox for 3D Object Detection from Point Cloud},
+author={Shi, Shaoshuai and Guo, Chaoxu and Li, Hongsheng},
+Journal ={https://github.com/open-mmlab/OpenPCDet},
+year={2020}
+}
+</p></pre> -->
+<pre><p id="OpenPCDet" style="font:18px; display:none">
+@misc{openpcdet2020,
+title={OpenPCDet: An Open-source Toolbox for 3D Object Detection from Point Clouds},
+author={OpenPCDet Development Team},
+howpublished = {\url{https://github.com/open-mmlab/OpenPCDet}},
+year={2020}
+}
+</p></pre>
+
+<h2 id="technical-report">Technical Report</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/PVRCNN_waymo_min.png" width="96%" height="100" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/2008.12599" style="">
+          PV-RCNN: The Top-Performing LiDAR-only Solutions for 3D
+          Detection / 3D Tracking / Domain Adaptation of Waymo Open
+          Dataset Challenges
+        </a>
+        <br />
+        <font color="#000000">
+          <b>Shaoshuai Shi</b>, Chaoxu Guo, Jihan Yang, Hongsheng Li
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            <!--       arXiv:1912.13192, Technical Report, 2019
+        </em>  -->
+            Technical report of top-performing LiDAR-only solutions to
+            Waymo Open Dataset Challenges (CVPRW), 2020.
+          </em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/2008.12599.pdf">[PDF]</a> &nbsp;
+        <a href="javascript:hideshow(document.getElementById('PVRCNN-waymo'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet" style="">[Code]</a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/open-mmlab/OpenPCDet?style=social" />
+        </a>
+        <br />
+      </div>
+    </td>
+  </tr>
+</table>
+
+<pre><p id="PVRCNN-waymo" style="font:18px; display:none">
+@article{shi2020pvwaymo,
+title={PV-RCNN: The Top-Performing LiDAR-only Solutions for 3D Detection/3D Tracking/Domain Adaptation of Waymo Open Dataset Challenges},
+author={Shi, Shaoshuai and Guo, Chaoxu and Yang, Jihan and Li, Hongsheng},
+journal={arXiv preprint arXiv:2008.12599},
+year={2020}
+}
+</p></pre>
+
+<h2 id="publications">Publications</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<!-- See full list at <a href="https://scholar.google.com.hk/citations?user=DC9wzBgAAAAJ&hl=zh-CN">[Google Scholar]</a>. -->
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/PVRCNN_min.png" width="96%" height="100" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/1912.13192" style="">
+          PV-RCNN: Point-Voxel Feature Set Abstraction for 3D Object
+          Detection
+        </a>
+        <br />
+        <font color="#000000">
+          <b>Shaoshuai Shi</b>, Chaoxu Guo, Li Jiang, Zhe Wang, Jianping
+          Shi, Xiaogang Wang, Hongsheng Li
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            <!--       arXiv:1912.13192, Technical Report, 2019
+        </em>  -->
+            IEEE Conference on Computer Vision and Pattern Recognition
+            (CVPR), 2020.
+          </em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/1912.13192.pdf">[PDF]</a> &nbsp;
+        <a href="javascript:hideshow(document.getElementById('PVRCNN'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet" style="">[Code]</a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/open-mmlab/OpenPCDet?style=social" />
+        </a>
+        <a href="https://github.com/sshaoshuai/PV-RCNN"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/sshaoshuai/PV-RCNN?style=social" />
+        </a>
+        <br />
+        <font color="#FF0000">Ranked No. 1 on KITTI 3D object detection benchmark (Car,
+          Nov-16 2019).
+        </font>
+        <br /><br />
+        <font color="#FF0000">Ranked No. 1 among all LiDAR-only methods on 3D Detection, 3D
+          Tracking, Domain Adaptation three tracks of the Waymo Open
+          Dataset challenge.</font>
+        <br />
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="PVRCNN" style="font:18px; display:none">
+@inproceedings{shi2020pv,
+title={Pv-rcnn: Point-voxel feature set abstraction for 3d object detection},
+author={Shi, Shaoshuai and Guo, Chaoxu and Jiang, Li and Wang, Zhe and Shi, Jianping and Wang, Xiaogang and Li, Hongsheng},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+pages={10529--10538},
+year={2020}
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/PointGroup_min.png" width="96%" height="90" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/2004.01658" style="">
+          PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation
+        </a>
+        <br />
+        <font color="#000000">
+          Li Jiang, Hengshuang Zhao, <b>Shaoshuai Shi</b>, Shu Liu,
+          Chi-Wing Fu, Jiaya Jia
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            IEEE Conference on Computer Vision and Pattern Recognition
+            (CVPR), <span style="color: red">Oral Presentation</span>,
+            2020.
+          </em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/2004.01658.pdf" style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('PointGroup'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/Jia-Research-Lab/PointGroup" style="">[Code]</a>
+        &nbsp;
+        <img alt="GitHub stars" style="vertical-align: middle"
+          src="https://img.shields.io/github/stars/Jia-Research-Lab/PointGroup?style=social" />
+        <br />
+        <font color="#FF0000">Ranked 1st place on ScanNet 3D Semantic instance benchmark
+          (Nov-16 2019).
+        </font>
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="PointGroup" style="font:18px; display:none">
+@inproceedings{jiang2020pointgroup,
+title={PointGroup: Dual-Set Point Grouping for 3D Instance Segmentation},
+author={Jiang, Li and Zhao, Hengshuang and Shi, Shaoshuai and Liu, Shu and Fu, Chi-Wing and Jia, Jiaya},
+booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+pages={4867--4876},
+year={2020}
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/PartA2_v2_min.png" width="96%" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/1907.03670" style="">
+          From Points to Parts: 3D Object Detection from Point Cloud with
+          Part-aware and Part-aggregation Network
+        </a>
+        <br />
+        <font color="#000000">
+          <b>Shaoshuai Shi</b>, Zhe Wang, Jianping Shi, Xiaogang Wang,
+          Hongsheng Li
+        </font>
+        <br />
+        <font style="font-size: 15px"><i>
+            IEEE Transactions on Pattern Analysis and Machine Intelligence
+            (T-PAMI), accepted.
+          </i>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/1907.03670.pdf">[PDF]</a> &nbsp;
+        <a href="javascript:hideshow(document.getElementById('PartA2'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet" style="">[Code]</a>
+        &nbsp;
+        <a href="https://github.com/open-mmlab/OpenPCDet"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/open-mmlab/OpenPCDet?style=social" />
+        </a>
+        <a href="https://github.com/sshaoshuai/PartA2-Net"><img alt="GitHub stars" style="vertical-align: middle"
+            src="https://img.shields.io/github/stars/sshaoshuai/PartA2-Net?style=social" />
+        </a>
+        <br />
+        <font color="#FF0000">Ranked 1st place on KITTI 3D object detection benchmark (Car,
+          July-9 2019).</font>
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="PartA2" style="font:18px; display:none">
+@article{shi2020part,
+title={From Points to Parts: 3D Object Detection from Point Cloud with Part-aware and Part-aggregation Network},
+author={Shi, Shaoshuai and Wang, Zhe and Shi, Jianping and Wang, Xiaogang and Li, Hongsheng},
+journal={IEEE Transactions on Pattern Analysis and Machine Intelligence},
+publisher={IEEE},
+year={2020}
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" valign="top">
+      <img src="content/images/PointRCNN_min.png" width="96%" height="90" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/1812.04244" style="">
+          PointRCNN: 3D Object Proposal Generation and Detection from
+          Point Cloud
+        </a>
+        <br />
+        <font color="#000000">
+          <b>Shaoshuai Shi</b>, Xiaogang Wang, Hongsheng Li
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            IEEE Conference on Computer Vision and Pattern Recognition
+            (CVPR), 2019.
+          </em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/1812.04244.pdf" style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('PointRCNN'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+        <a href="https://github.com/sshaoshuai/PointRCNN" style="">[Code]</a>
+        &nbsp;
+        <img alt="GitHub stars" style="vertical-align: middle"
+          src="https://img.shields.io/github/stars/sshaoshuai/PointRCNN?style=social" />
+        <br />
+        <font color="#FF0000">The top-11 cited papers among all CVPR-2019 papers with 200+
+          citations in one year (July, 2020).</font>
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="PointRCNN" style="font:18px; display:none">
+@inproceedings{shi2019pointrcnn,
+title={PointRCNN: 3d Object Proposal Generation and Detection from Point Cloud},
+author={Shi, Shaoshuai and Wang, Xiaogang and Li, Hongsheng},
+booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+pages={770--779},
+year={2019}
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" align="middle" valign="top">
+      <img src="content/images/ICRA2020-min.png" width="99%" height="100" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/2002.05316" style="">
+          SegVoxelNet: Exploring Semantic Context and Depth-aware Features
+          for 3D Vehicle Detection from Point Cloud
+        </a>
+        <br />
+        <font color="#000000">
+          Hongwei Yi, <b>Shaoshuai Shi</b>, Mingyu Ding, Jiankai Sun, Kui
+          Xu, Hui Zhou, Zhe Wang, Sheng Li, Guoping Wang
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            International Conference on Robotics and Automation (ICRA),
+            2020.</em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/2002.05316.pdf" style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('ICRA2020'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="ICRA2020" style="font:18px; display:none">
+@article{yi2020segvoxelnet,
+title={SegVoxelNet: Exploring Semantic Context and Depth-aware Features for 3D Vehicle Detection from Point Cloud},
+author={Yi, Hongwei and Shi, Shaoshuai and Ding, Mingyu and Sun, Jiankai and Xu, Kui and Zhou, Hui and Wang, Zhe and Li, Sheng and Wang, Guoping},
+journal={arXiv preprint  arXiv:2002.05316},
+year={2020}
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" align="middle" valign="top">
+      <img src="content/images/ICLR_min.png" width="99%" height="80" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://arxiv.org/abs/1903.11851" style="">
+          Feature Intertwiner for Object Detection
+        </a>
+        <br />
+        <font color="#000000">
+          Hongyang Li, Bo Dai, <b>Shaoshuai Shi</b>, Wanli Ouyang,
+          Xiaogang Wang
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            International Conference on Learning Representation (ICLR),
+            2019.</em>
+        </font>
+        <br />
+        <a href="https://arxiv.org/pdf/1903.11851.pdf" style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('ICLR2019'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="ICLR2019" style="font:18px; display:none">
+@inproceedings{li2018feature,
+title={Feature Intertwiner for Object Detection},
+author={Hongyang Li and Bo Dai and Shaoshuai Shi and Wanli Ouyang and Xiaogang Wang},
+booktitle={International Conference on Learning Representations},
+year={2019},
+url={https://openreview.net/forum?id=SyxZJn05YX},
+}
+</p></pre>
+
+<table class="">
+  <tr>
+    <td width="30%" align="middle" valign="top">
+      <img src="content/images/GAL_demo.png" width="95%" height="80" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0px">
+        <a href="https://eccv2018.org/openaccess/content_ECCV_2018/papers/Li_Jiang_GAL_Geometric_Adversarial_ECCV_2018_paper.pdf"
+          style="">
+          GAL: Geometric Adversarial Loss for Single-View 3D-Object
+          Reconstruction
+        </a>
+        <br />
+        <font color="#000000">
+          Li Jiang, <b>Shaoshuai Shi</b>, Xiaojuan Qi, Jiaya Jia
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            European Conference on Computer Vision (ECCV),
+            <span style="color: red">Oral Presentation</span>, 2018.
+          </em>
+        </font>
+        <br />
+        <a href="https://eccv2018.org/openaccess/content_ECCV_2018/papers/Li_Jiang_GAL_Geometric_Adversarial_ECCV_2018_paper.pdf"
+          style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('GAL'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="GAL" style="font:18px; display:none">
+@inproceedings{jiang2018gal,
+title={Gal: Geometric adversarial loss for single-view 3d-object reconstruction},
+author={Jiang, Li and Shi, Shaoshuai and Qi, Xiaojuan and Jia, Jiaya},
+booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+pages={802--816},
+year={2018}
+}
+</p></pre>
+<table class="">
+  <tr>
+    <td width="30%" align="middle" valign="top">
+      <img src="content/images/FCCM_min.png" width="95%" height="110" />
+    </td>
+    <td width="70%" valign="top">
+      <div style="margin-top: 0px; margin-bottom: 0 px">
+        <a href="http://cadlab.cs.ucla.edu/beta/cadlab/sites/default/files/publications/fccm2017.pdf" style="">
+          FP-DNN: An automated framework for mapping deep neural networks
+          onto FPGAs with RTL-HLS hybrid templates
+        </a>
+        <br />
+        <font color="#000000">
+          Yijin Guan, Hao Liang, Ningyi Xu, Wenqiang Wang,
+          <b>Shaoshuai Shi</b>, Xi Chen, Guangyu Sun, Wei Zhang, Jason
+          Cong
+        </font>
+        <br />
+        <font style="font-size: 15px"><em>
+            IEEE Field-Programmable Custom Computing Machines (FCCM),
+            2017.
+          </em>
+        </font>
+        <br />
+        <a href="http://cadlab.cs.ucla.edu/beta/cadlab/sites/default/files/publications/fccm2017.pdf"
+          style="">[PDF]</a>
+        &nbsp;
+        <a href="javascript:hideshow(document.getElementById('FCCM'))">
+          [Bibtex]
+        </a>
+        &nbsp;
+      </div>
+    </td>
+  </tr>
+</table>
+<pre><p id="FCCM" style="font:18px; display:none">
+@inproceedings{guan2017fp,
+title={FP-DNN: An automated framework for mapping deep neural networks onto FPGAs with RTL-HLS hybrid templates},
+author={Guan, Yijin and Liang, Hao and Xu, Ningyi and Wang, Wenqiang and Shi, Shaoshuai and Chen, Xi and Sun, Guangyu and Zhang, Wei and Cong, Jason},
+booktitle={2017 IEEE 25th Annual International Symposium on Field-Programmable Custom Computing Machines (FCCM)},
+pages={152--159},
+year={2017},
+organization={IEEE}
+}
+</p></pre>
+
+<h2 id="invited-talks">Invited Talks</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<ul>
+  <li>
+    [2020-06-24] VALSE Webinar: Deep Learning on Point Clouds for 3D
+    Object Detection.
+    <a href="https://www.bilibili.com/video/BV15K411H7wf?from=search&amp;seid=2278904913441168463">[Link
+      (Chinese)]</a>
+  </li>
+  <li>
+    [2020-06-16] PV-RCNN: The Top-Performing LiDAR-only Solutions for 3D
+    Detection / 3D Tracking / Domain Challenges of Waymo Open Dataset
+    Challenges.
+    <a href="https://sites.google.com/view/cvpr20-scalability/archived-talks/challenges">[Link]</a>
+  </li>
+</ul>
+-->
+
+<h2 id="education--experiences">Education &amp; Experiences</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<ul>
+  <li>
+    [Aug 2017 ~ Exp. 2021] PhD student in computer vision and deep
+    learning at The Chinese University of Hong Kong.
+  </li>
+  <li>
+    [July 2016 ~ July 2017] Research intern at the System Group of
+    Microsoft Research Asia (MSRA), Beijing, China.
+  </li>
+  <li>
+    [Aug 2013 ~ July 2017] Bachelor degree at Harbin Institute Technology,
+    major in Computer Science and Technology.
+  </li>
+</ul>
+
+<h2 id="honors--awards">Honors &amp; Awards</h2>
+<hr style="margin-top: -16px; margin-bottom: 10px" />
+
+<ul>
+  <li>
+    <a href="https://ai.googleblog.com/2020/10/announcing-2020-google-phd-fellows.html">Google PhD Fellowship</a>
+    in machine perception (10 selected world-wide), 2020.
+  </li>
+  <li>
+    <a href="https://cerg1.ugc.edu.hk/hkpfs/index.html">Hong Kong PhD Fellowship</a>
+    (The highest scholarship for PhD students in Hong Kong), 2017-2021
+  </li>
+  <li>National Scholarship, 2014, 2015, 2016</li>
+  <li>
+    Silver Prize of
+    <a href="https://ccpc.io/post/91">China Collegiate Programming Contest (CCPC 2015)</a>, 2015
+  </li>
+  <li>
+    Second Prize of
+    <a href="http://en.mcm.edu.cn/">China Undergraduate Mathematical Contest in Modeling (CUMCM
+      2015)</a>, 2015
+  </li>
+  <li>
+    Gold Prize of
+    <a href="https://ccpc.io/">China Collegiate Programming Contest (CCPC) of Northeast Area</a>, 2015
+  </li>
+  <li>
+    First Prize of Mathematical Modeling Contest of Northeast Area, 2015
+  </li>
+  <li>
+    First Class Scholarship of HIT (six times at each semester), 2014-2016
+  </li>
+</ul>
+<hr />
