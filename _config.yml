@@ -5,3 +5,4 @@ gem "github-pages", group: :jekyll_plugins
 title: [Mohammad Meraz]
 description: [Computer vision and deep learning  in the area of Autonomous Driving Car, especially 3D scene understanding with point cloud dataset to solve perception problems for 3D Shape.
 ]
+show_downloads: true
